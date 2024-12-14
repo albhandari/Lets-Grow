@@ -5,14 +5,14 @@ struct AuthView: View {
     @State private var selectedSegment = 0 // 0 = Login, 1 = Register
     
     // Login fields
-    @State private var loginEmail = "alex@gmail.com"
-    @State private var loginPassword = "1234"
+    @State private var loginEmail = ""
+    @State private var loginPassword = ""
     @State private var loginFailed = false
     
     // Register fields
-    @State private var registerUsername = "alex"
-    @State private var registerEmail = "alex@gmail.com"
-    @State private var registerPassword = "1234"
+    @State private var registerUsername = ""
+    @State private var registerEmail = ""
+    @State private var registerPassword = ""
     @State private var registerFailed = false
     
     var body: some View {

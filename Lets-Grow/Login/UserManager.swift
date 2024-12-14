@@ -55,7 +55,7 @@ class UserManager: ObservableObject {
             return false
         }
         currentUser = user
-        print(currentUser)
+        //print(currentUser)
         return true
     }
     

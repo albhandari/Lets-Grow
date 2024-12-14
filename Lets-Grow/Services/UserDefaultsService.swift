@@ -22,7 +22,7 @@ class UserDefaultsService {
                 let decoder = JSONDecoder()
                 decoder.dateDecodingStrategy = .iso8601
                 let usersData = try decoder.decode(UsersData.self, from: data)
-                print("Loaded UsersData: \(usersData)")
+                //print("Loaded UsersData: \(usersData)")
                 return usersData
             } catch {
                 print("Error decoding UsersData from UserDefaults: \(error.localizedDescription)")
@@ -43,7 +43,7 @@ class UserDefaultsService {
             encoder.dateEncodingStrategy = .iso8601
             let data = try encoder.encode(usersData)
             UserDefaults.standard.set(data, forKey: usersKey)
-            print("Successfully saved UsersData: \(usersData)")
+            //print("Successfully saved UsersData: \(usersData)")
         } catch {
             print("Failed to save UsersData: \(error.localizedDescription)")
         }
